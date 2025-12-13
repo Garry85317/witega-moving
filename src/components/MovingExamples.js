@@ -4,10 +4,10 @@ import './MovingExamples.css';
 const MovingExamples = () => {
   // TODO: 替換這些圖片路徑為實際的搬家實例圖片
   const examples = [
-    { id: 1, src: '/images/129308_0.jpg', alt: '威特嘉精緻搬家實例 - 專業搬家服務展示' }, // TODO: 添加圖片
-    { id: 2, src: '/images/129324_0.jpg', alt: '威特嘉搬家團隊 - 台中搬家公司實績' }, // TODO: 添加圖片
-    { id: 3, src: '/images/129317_0.jpg', alt: '威特嘉精緻搬家案例 - 安全搬運服務' }, // TODO: 添加圖片
-    { id: 4, src: '/images/129300_0.jpg', alt: '威特嘉搬家實例 - 專業搬家公司' }, // TODO: 添加圖片
+    { id: 1, src: `${process.env.PUBLIC_URL}/images/129308_0.jpg`, alt: '威特嘉精緻搬家實例 - 專業搬家服務展示' }, // TODO: 添加圖片
+    { id: 2, src: `${process.env.PUBLIC_URL}/images/129324_0.jpg`, alt: '威特嘉搬家團隊 - 台中搬家公司實績' }, // TODO: 添加圖片
+    { id: 3, src: `${process.env.PUBLIC_URL}/images/129317_0.jpg`, alt: '威特嘉精緻搬家案例 - 安全搬運服務' }, // TODO: 添加圖片
+    { id: 4, src: `${process.env.PUBLIC_URL}/images/129300_0.jpg`, alt: '威特嘉搬家實例 - 專業搬家公司' }, // TODO: 添加圖片
   ];
 
   return (

@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/witega-moving/static/css/main.dcfefa5c.css",
+    "main.css": "/witega-moving/static/css/main.ae127b45.css",
     "main.js": "/witega-moving/static/js/main.a172369c.js",
     "index.html": "/witega-moving/index.html",
-    "main.dcfefa5c.css.map": "/witega-moving/static/css/main.dcfefa5c.css.map",
+    "main.ae127b45.css.map": "/witega-moving/static/css/main.ae127b45.css.map",
     "main.a172369c.js.map": "/witega-moving/static/js/main.a172369c.js.map"
   },
   "entrypoints": [
-    "static/css/main.dcfefa5c.css",
+    "static/css/main.ae127b45.css",
     "static/js/main.a172369c.js"
   ]
 }

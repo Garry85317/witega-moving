@@ -8,7 +8,12 @@ const Header = () => {
         <div className="header-logo-container">
           <img src="/images/LOGO.png" alt="威特嘉搬家 Logo" className="header-logo" />
         </div>
-        <h1 className="header-title">台中優質平價搬家公司-威特嘉搬家</h1>
+        <div className="header-title-container">
+          <h1 className="header-title">
+            <span className="header-title-line1">台中優質平價搬家公司</span>
+            <span className="header-title-line2">威特嘉精緻搬家</span>
+          </h1>
+        </div>
       </div>
     </header>
   );

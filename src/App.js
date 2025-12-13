@@ -16,19 +16,21 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <Hero />
-      <LineButton />
-      <ServiceFeatures />
-      <LineButton />
-      <MovingExamples />
-      <LineButton />
-      <CustomerReviews />
-      <ServiceItems />
-      <LineButton />
-      <Pricing />
-      <MovingSteps />
-      <LineButton />
-      <FAQ />
+      <main>
+        <Hero />
+        <LineButton />
+        <ServiceFeatures />
+        <LineButton />
+        <MovingExamples />
+        <LineButton />
+        <CustomerReviews />
+        <ServiceItems />
+        <LineButton />
+        <Pricing />
+        <MovingSteps />
+        <LineButton />
+        <FAQ />
+      </main>
       <Footer />
     </div>
   );

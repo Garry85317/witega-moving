@@ -5,7 +5,7 @@ const Hero = () => {
   return (
     <section className="hero">
       <div className="hero-content">
-        <h1 className="hero-main-title">🚚 威特精緻搬家：您的搬家好夥伴，精緻、專業、零負擔！ 🏠</h1>
+        <h2 className="hero-main-title">🚚 威特精緻搬家：您的搬家好夥伴，精緻、專業、零負擔！ 🏠</h2>
         <p className="hero-intro">
           無論是何種搬遷需求，威特精緻搬家提供一站式、24小時全年無休的貼心服務。從免費估價到定位點交，我們用專業、細心與效率，讓您輕鬆迎接新生活！
         </p>

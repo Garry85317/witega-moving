@@ -48,25 +48,29 @@ const CustomerReviews = () => {
   };
 
   return (
-    <section className="customer-reviews">
+    <section className="customer-reviews" itemScope itemType="https://schema.org/Review">
       <div className="divider">威特嘉精緻搬家_00後部隊</div>
       <h2 className="section-title">威特嘉の顧客好評</h2>
       <div className="reviews-grid">
         {reviews.map((review, index) => (
-          <div key={index} className="review-card">
+          <article key={index} className="review-card" itemScope itemType="https://schema.org/Review">
             <div className="review-header">
-              <div className="reviewer-name">{review.name}</div>
+              <div className="reviewer-name" itemProp="author" itemScope itemType="https://schema.org/Person">
+                <span itemProp="name">{review.name}</span>
+              </div>
               <div className="reviewer-role">{review.role}</div>
             </div>
-            <div className="review-rating">
+            <div className="review-rating" itemProp="reviewRating" itemScope itemType="https://schema.org/Rating">
+              <meta itemProp="ratingValue" content={review.rating} />
+              <meta itemProp="bestRating" content="5" />
               {renderStars(review.rating)}
             </div>
-            <div className="review-content">
+            <div className="review-content" itemProp="reviewBody">
               {review.content.split('**').map((part, i) => 
                 i % 2 === 1 ? <strong key={i}>{part}</strong> : part
               )}
             </div>
-          </div>
+          </article>
         ))}
       </div>
     </section>

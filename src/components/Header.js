@@ -6,7 +6,7 @@ const Header = () => {
     <header className="header">
       <div className="header-content">
         <div className="header-logo-container">
-          <img src="/images/LOGO.png" alt="威特嘉搬家 Logo" className="header-logo" />
+          <img src="/images/LOGO.png" alt="威特嘉精緻搬家 Logo - 台中優質平價搬家公司" className="header-logo" />
         </div>
         <div className="header-title-container">
           <h1 className="header-title">

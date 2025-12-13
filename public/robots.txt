@@ -1,5 +1,5 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://garry85317.github.io/witega-moving/sitemap.xml
+Sitemap: https://witega-moving.com/sitemap.xml
 

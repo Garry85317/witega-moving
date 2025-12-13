@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "台中優質平價搬家公司-威特嘉精緻搬家",
   "private": true,
-  "homepage": "https://garry85317.github.io/witega-moving",
+  "homepage": "https://witega-moving.com",
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

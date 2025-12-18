@@ -11,7 +11,7 @@ const LineButton = () => {
   return (
     <div className="line-button-container">
       <button className="line-button" onClick={handleClick}>
-        <span className="line-button-text">立即加Line預約折$500</span>
+        <span className="line-button-text">立即加 Line 線上免費估價｜預約再折 $500</span>
       </button>
     </div>
   );

@@ -83,6 +83,14 @@
   margin-top: 5px;
 }
 
+.header-title-line3 {
+  display: block;
+  font-size: 0.85em;
+  margin-top: 8px;
+  opacity: 0.95;
+  font-weight: normal;
+}
+
 @media (max-width: 768px) {
   .header-content {
     flex-direction: column;
@@ -105,6 +113,11 @@
   
   .header-title-line2 {
     font-size: 1em;
+  }
+  
+  .header-title-line3 {
+    font-size: 0.75em;
+    margin-top: 5px;
   }
 }
 

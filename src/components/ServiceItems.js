@@ -28,9 +28,9 @@ const ServiceItems = () => {
       <div className="divider">威特嘉精緻搬家_00後部隊</div>
       <h2 className="section-title">▶我們の服務項目◀</h2>
       <p className="service-intro-text">
-        威特嘉精緻搬家深耕<strong>台中搬家</strong>市場，無論是學生套房、小家庭、整棟透天或公司辦公室，
-        都能依照您的狀況客製搬家方案。從免費估價、紙箱提供、搬運到廢棄物清運與室內清潔，
-        讓您一次完成搬家相關需求，不用東找西問。
+        威特嘉精緻搬家深耕<strong>台中搬家</strong>市場，無論是<strong>學生套房搬家</strong>、<strong>小家庭搬家</strong>、整棟透天或<strong>公司辦公室搬遷</strong>，
+        都能依照您的狀況客製<strong>搬家方案</strong>。從<strong>LINE免費估價</strong>、紙箱提供、專業搬運到<strong>廢棄物清運</strong>與<strong>室內清潔</strong>，
+        讓您一次完成<strong>台中搬家</strong>相關需求，不用東找西問。<strong>套房搬家最低1500元起</strong>，<strong>加LINE預約再折500元</strong>！
       </p>
       <div className="services-grid">
         {services.map((service, index) => {

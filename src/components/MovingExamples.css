@@ -6,6 +6,15 @@
   position: relative;
 }
 
+.examples-intro {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 40px;
+  font-size: 16px;
+  line-height: 1.8;
+  color: #555;
+}
+
 .examples-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));

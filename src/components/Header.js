@@ -12,6 +12,7 @@ const Header = () => {
           <h1 className="header-title">
             <span className="header-title-line1">台中優質平價搬家公司</span>
             <span className="header-title-line2">威特嘉精緻搬家</span>
+            <span className="header-title-line3">24小時服務 | 免費估價 | 套房搬家1500元起</span>
           </h1>
         </div>
       </div>

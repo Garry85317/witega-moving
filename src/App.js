@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './App.css';
 import Header from './components/Header';
 import Hero from './components/Hero';
@@ -13,6 +13,37 @@ import Footer from './components/Footer';
 import LineButton from './components/LineButton';
 
 function App() {
+  // 處理錨點連結滾動
+  useEffect(() => {
+    const handleHashChange = () => {
+      const hash = window.location.hash;
+      if (hash) {
+        // 移除 # 符號
+        const id = hash.substring(1);
+        const element = document.getElementById(id);
+        if (element) {
+          // 延遲執行以確保頁面已載入
+          setTimeout(() => {
+            element.scrollIntoView({ 
+              behavior: 'smooth',
+              block: 'start'
+            });
+          }, 100);
+        }
+      }
+    };
+
+    // 初始載入時檢查
+    handleHashChange();
+
+    // 監聽 hash 變化
+    window.addEventListener('hashchange', handleHashChange);
+
+    return () => {
+      window.removeEventListener('hashchange', handleHashChange);
+    };
+  }, []);
+
   return (
     <div className="App">
       <Header />
@@ -32,7 +63,7 @@ function App() {
         <FAQ />
       </main>
       {/* Google Map 區塊（位於 Footer 上方） */}
-      <section className="map-section">
+      <section id="location" className="map-section">
         <h2 className="section-title">公司位置</h2>
         <div className="map-container">
           <iframe

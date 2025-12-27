@@ -48,7 +48,7 @@ const CustomerReviews = () => {
   };
 
   return (
-    <section className="customer-reviews" itemScope itemType="https://schema.org/Review">
+    <section id="reviews" className="customer-reviews" itemScope itemType="https://schema.org/Review">
       <div className="divider">威特嘉精緻搬家_00後部隊</div>
       <h2 className="section-title">威特嘉の顧客好評</h2>
       <div className="reviews-grid">

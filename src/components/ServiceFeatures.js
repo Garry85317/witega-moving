@@ -3,7 +3,7 @@ import './ServiceFeatures.css';
 
 const ServiceFeatures = () => {
   return (
-    <section className="service-features">
+    <section id="features" className="service-features">
       <div className="divider">威特嘉精緻搬家_00後部隊</div>
       <h2 className="section-title">威特嘉の服務特色｜台中精緻搬家</h2>
       <div className="features-container">

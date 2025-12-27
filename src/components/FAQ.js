@@ -36,7 +36,7 @@ const FAQ = () => {
   };
 
   return (
-    <section className="faq">
+    <section id="faq" className="faq">
       <div className="divider">威特嘉精緻搬家_00後部隊</div>
       <h2 className="section-title">搬家常見問題</h2>
       <div className="faq-container">

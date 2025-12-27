@@ -11,7 +11,7 @@ const MovingSteps = () => {
   ];
 
   return (
-    <section className="moving-steps">
+    <section id="steps" className="moving-steps">
       <div className="divider">威特嘉精緻搬家_00後部隊</div>
       <h2 className="section-title">威特嘉の搬家步驟</h2>
       <div className="steps-container">

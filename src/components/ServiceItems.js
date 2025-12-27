@@ -24,7 +24,7 @@ const ServiceItems = () => {
   ];
 
   return (
-    <section className="service-items">
+    <section id="services" className="service-items">
       <div className="divider">威特嘉精緻搬家_00後部隊</div>
       <h2 className="section-title">▶我們の服務項目◀</h2>
       <p className="service-intro-text">

@@ -3,7 +3,7 @@ import './Pricing.css';
 
 const Pricing = () => {
   return (
-    <section className="pricing">
+    <section id="pricing" className="pricing">
       <div className="divider">威特嘉精緻搬家_00後部隊</div>
       <h2 className="section-title">威特嘉の收費方式</h2>
       

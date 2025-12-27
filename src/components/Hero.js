@@ -3,7 +3,7 @@ import './Hero.css';
 
 const Hero = () => {
   return (
-    <section className="hero">
+    <section id="hero" className="hero">
       <div className="hero-content">
         <h2 className="hero-main-title">🚚 威特嘉精緻搬家：台中搬家首選，精緻、專業、零負擔！ 🏠</h2>
         <p className="hero-intro">

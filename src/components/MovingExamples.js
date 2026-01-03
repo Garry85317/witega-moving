@@ -18,6 +18,21 @@ const MovingExamples = () => {
       src: `${process.env.PUBLIC_URL}/images/案例/S__125632530_0.jpg`, 
       alt: '威特嘉精緻搬家案例 - 台中搬家安全搬運服務，價格透明免費估價' 
     },
+    { 
+      id: 4, 
+      src: `${process.env.PUBLIC_URL}/images/案例/S__126443548.jpg`, 
+      alt: '威特嘉搬家服務實例 - 專業搬家團隊，細心搬運客戶物品' 
+    },
+    { 
+      id: 5, 
+      src: `${process.env.PUBLIC_URL}/images/案例/S__40509478.jpg`, 
+      alt: '威特嘉精緻搬家案例 - 台中搬家專業服務，安全搬運保障' 
+    },
+    { 
+      id: 6, 
+      src: `${process.env.PUBLIC_URL}/images/案例/S__40509480.jpg`, 
+      alt: '威特嘉搬家實績 - 台中搬家公司服務展示，客戶滿意推薦' 
+    },
   ];
 
   return (

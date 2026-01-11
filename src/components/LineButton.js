@@ -4,26 +4,19 @@ import './LineButton.css';
 const LineButton = () => {
   const lineUrl = 'https://line.me/R/ti/p/@703rvibx';
 
-  const handleClick = () => {
+  const handleClick = (e) => {
+    e.preventDefault();
+    
     // Google Ads 转化追踪
-    if (window.gtag) {
-      window.gtag('event', 'conversion', {
-        'send_to': 'AW-17822651163',
-        'event_category': 'engagement',
-        'event_label': 'LINE_Button_Click',
-        'value': 1.0,
-        'currency': 'TWD'
-      });
-      
-      // 追踪按钮点击事件
-      window.gtag('event', 'click', {
-        'event_category': 'CTA',
-        'event_label': 'LINE_Button',
-        'value': 1
-      });
+    if (window.gtag_report_conversion) {
+      // 使用转化追踪函数
+      window.gtag_report_conversion();
     }
     
+    // 打开 LINE 链接
     window.open(lineUrl, '_blank');
+    
+    return false;
   };
 
   return (

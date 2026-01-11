@@ -9,22 +9,22 @@
     gtag('js', new Date());
     gtag('config', 'AW-17822651163');
     
-    // 追踪 LINE 按钮点击（转化事件）
-    window.addEventListener('load', function() {
-      // 追踪所有 LINE 按钮点击
-      document.addEventListener('click', function(e) {
-        const target = e.target.closest('.line-button, .line-button-container, [class*="line"]');
-        if (target) {
-          gtag('event', 'conversion', {
-            'send_to': 'AW-17822651163',
-            'event_category': 'engagement',
-            'event_label': 'LINE_Button_Click',
-            'value': 1.0,
-            'currency': 'TWD'
-          });
+    // Event snippet for 點選通話 conversion page
+    // 转化追踪函数 - 用于电话和 LINE 点击追踪
+    window.gtag_report_conversion = function(url) {
+      var callback = function () {
+        if (typeof(url) != 'undefined') {
+          window.location = url;
         }
+      };
+      gtag('event', 'conversion', {
+        'send_to': 'AW-17822651163/qUK6CJHh6-AbEJumwLJC',
+        'value': 1.0,
+        'currency': 'TWD',
+        'event_callback': callback
       });
-    });
+      return false;
+    };
   </script>
   
   <!-- Google Ads 转化追踪优化 -->

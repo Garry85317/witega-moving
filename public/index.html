@@ -13,35 +13,39 @@
     gtag('config', 'AW-17822791009');
   </script>
   
-  <!-- LINE 連結點擊追蹤 -->
+  <!-- LINE / 電話轉換追蹤（事件委派，支援 React 動態內容） -->
   <script>
-    window.addEventListener("load", function (event) {
-      document.querySelectorAll("a[href*='line.me']").forEach(function (e) {
-        e.addEventListener('click', function () {
-          gtag('event', 'conversion', { 'send_to': 'AW-17822651163/wdXkCLnVq_0bEJumwLJC' });
-        });
-      });
-    });
-  </script>
-  <!-- LINE 按鈕點擊追蹤 -->
-  <script>
-    window.addEventListener('load', function (event) {
-      document.querySelectorAll('[class="line-button"], [class="line-button"] *').forEach(function (e) {
-        e.addEventListener('click', function () {
-          gtag('event', 'conversion', { 'send_to': 'AW-17822651163/wdXkCLnVq_0bEJumwLJC' });
-        });
-      });
-    });
-  </script>
-  <!-- 電話點擊追蹤 -->
-  <script>
-    window.addEventListener("load", function (event) {
-      document.querySelectorAll("a[href*='tel']").forEach(function (e) {
-        e.addEventListener('click', function () {
-          gtag('event', 'conversion', { 'send_to': 'AW-17822651163/DYnOCI6UqP0bEJumwLJC' });
-        });
-      });
-    });
+    (function() {
+      function isLineLink(el) {
+        return el && el.nodeName === 'A' && el.getAttribute('href') && el.getAttribute('href').indexOf('line.me') !== -1;
+      }
+      function isLineButton(el) {
+        return el && (el.classList && el.classList.contains('line-button'));
+      }
+      function isTelLink(el) {
+        return el && el.nodeName === 'A' && el.getAttribute('href') && el.getAttribute('href').indexOf('tel:') === 0;
+      }
+      function findUp(el, fn) {
+        while (el && el !== document.body) {
+          if (fn(el)) return el;
+          el = el.parentElement;
+        }
+        return null;
+      }
+      document.addEventListener('click', function(ev) {
+        var target = ev.target;
+        if (findUp(target, isLineLink) || findUp(target, isLineButton)) {
+          if (typeof gtag === 'function') {
+            gtag('event', 'conversion', { 'send_to': 'AW-17822651163/wdXkCLnVq_0bEJumwLJC' });
+          }
+        }
+        if (findUp(target, isTelLink)) {
+          if (typeof gtag === 'function') {
+            gtag('event', 'conversion', { 'send_to': 'AW-17822651163/DYnOCI6UqP0bEJumwLJC' });
+          }
+        }
+      }, true);
+    })();
   </script>
   
   <!-- Google Ads 转化追踪优化 -->

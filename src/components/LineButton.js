@@ -4,19 +4,9 @@ import './LineButton.css';
 const LineButton = () => {
   const lineUrl = 'https://line.me/R/ti/p/@703rvibx';
 
-  const handleClick = (e) => {
-    e.preventDefault();
-    
-    // Google Ads 转化追踪
-    if (window.gtag_report_conversion) {
-      // 使用转化追踪函数
-      window.gtag_report_conversion();
-    }
-    
-    // 打开 LINE 链接
+  const handleClick = () => {
+    // 追蹤由 index.html 的 LINE 按鈕腳本處理
     window.open(lineUrl, '_blank');
-    
-    return false;
   };
 
   return (

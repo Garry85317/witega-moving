@@ -6,34 +6,6 @@ const Footer = () => {
   const lineId = '@703rvibx';
   const lineUrl = 'https://line.me/R/ti/p/@703rvibx';
 
-  const handlePhoneClick = (e) => {
-    e.preventDefault();
-    
-    // Google Ads 转化追踪
-    if (window.gtag_report_conversion) {
-      window.gtag_report_conversion();
-    }
-    
-    // 拨打电话
-    window.location.href = `tel:${phoneNumber}`;
-    
-    return false;
-  };
-
-  const handleLineClick = (e) => {
-    e.preventDefault();
-    
-    // Google Ads 转化追踪
-    if (window.gtag_report_conversion) {
-      window.gtag_report_conversion();
-    }
-    
-    // 打开 LINE 链接
-    window.open(lineUrl, '_blank');
-    
-    return false;
-  };
-
   return (
     <footer className="footer">
       <div className="footer-content">
@@ -42,9 +14,10 @@ const Footer = () => {
           <div className="contact-info">
             <p>
               <strong>LINE ID：</strong>
-              <a 
-                href={lineUrl} 
-                onClick={handleLineClick}
+              <a
+                href={lineUrl}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="contact-link"
                 aria-label="加 LINE 聯絡"
               >
@@ -53,9 +26,8 @@ const Footer = () => {
             </p>
             <p>
               <strong>聯繫聯絡電話：</strong>
-              <a 
-                href={`tel:${phoneNumber}`} 
-                onClick={handlePhoneClick}
+              <a
+                href={`tel:${phoneNumber}`}
                 className="contact-link"
                 aria-label="撥打電話"
               >

@@ -11,23 +11,37 @@
     gtag('config', 'AW-17822651163');
     // 電話追蹤碼
     gtag('config', 'AW-17822791009');
-    
-    // Event snippet for 點選通話 conversion page
-    // 转化追踪函数 - 用于电话和 LINE 点击追踪
-    window.gtag_report_conversion = function(url) {
-      var callback = function () {
-        if (typeof(url) != 'undefined') {
-          window.location = url;
-        }
-      };
-      gtag('event', 'conversion', {
-        'send_to': 'AW-17822651163/qUK6CJHh6-AbEJumwLJC',
-        'value': 1.0,
-        'currency': 'TWD',
-        'event_callback': callback
+  </script>
+  
+  <!-- LINE 連結點擊追蹤 -->
+  <script>
+    window.addEventListener("load", function (event) {
+      document.querySelectorAll("a[href*='line.me']").forEach(function (e) {
+        e.addEventListener('click', function () {
+          gtag('event', 'conversion', { 'send_to': 'AW-17822651163/wdXkCLnVq_0bEJumwLJC' });
+        });
       });
-      return false;
-    };
+    });
+  </script>
+  <!-- LINE 按鈕點擊追蹤 -->
+  <script>
+    window.addEventListener('load', function (event) {
+      document.querySelectorAll('[class="line-button"], [class="line-button"] *').forEach(function (e) {
+        e.addEventListener('click', function () {
+          gtag('event', 'conversion', { 'send_to': 'AW-17822651163/wdXkCLnVq_0bEJumwLJC' });
+        });
+      });
+    });
+  </script>
+  <!-- 電話點擊追蹤 -->
+  <script>
+    window.addEventListener("load", function (event) {
+      document.querySelectorAll("a[href*='tel']").forEach(function (e) {
+        e.addEventListener('click', function () {
+          gtag('event', 'conversion', { 'send_to': 'AW-17822651163/DYnOCI6UqP0bEJumwLJC' });
+        });
+      });
+    });
   </script>
   
   <!-- Google Ads 转化追踪优化 -->

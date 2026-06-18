@@ -29,13 +29,17 @@
 }
 
 .hero-main-title {
-  font-size: 32px;
-  font-weight: bold;
+  font-size: 34px;
+  font-weight: 800;
   text-align: center;
   margin-bottom: 30px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
   color: #667eea;
-  text-shadow: 2px 2px 4px rgba(102, 126, 234, 0.2);
   line-height: 1.6;
+  letter-spacing: 0.5px;
 }
 
 .hero-intro {

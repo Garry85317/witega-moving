@@ -2,8 +2,36 @@
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 20px 40px;
   background: #ffffff;
+  box-shadow: 0 20px 60px rgba(60, 70, 120, 0.12);
+}
+
+/* 區塊載入時的淡入上移動畫 */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+main > section,
+.map-section {
+  animation: fadeInUp 0.7s ease both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  main > section,
+  .map-section {
+    animation: none;
+  }
 }
 
 /* 統一的section-title樣式 */

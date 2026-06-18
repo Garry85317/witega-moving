@@ -39,12 +39,12 @@ const Footer = () => {
         
         <div className="footer-section">
           <h3 className="footer-title">服務項目</h3>
-          <p>家庭搬家、學生搬家、公司行號搬遷、自助搬家、垃圾清運處理</p>
+          <p>家庭搬家、學生套房搬家、公司行號搬遷、自助搬家、廢棄物清運</p>
         </div>
-        
+
         <div className="footer-section">
           <h3 className="footer-title">服務地區</h3>
-          <p>全省、台中市、中彰投</p>
+          <p>全省服務｜北中南各縣市皆可安排到府</p>
         </div>
       </div>
       

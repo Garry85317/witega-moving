@@ -4,14 +4,41 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  line-height: 1.6;
+  line-height: 1.7;
   color: #333;
+  letter-spacing: 0.2px;
+  background: linear-gradient(180deg, #f4f6fb 0%, #eef1f8 100%);
+  background-attachment: fixed;
+}
+
+/* 文字選取色 */
+::selection {
+  background: rgba(102, 126, 234, 0.25);
+  color: #1a1a1a;
+}
+
+/* 客製化捲軸 */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #eef1f8;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #667eea, #764ba2);
+  border-radius: 10px;
 }
 
 code {
